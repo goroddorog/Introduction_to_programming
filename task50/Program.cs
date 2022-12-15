@@ -25,18 +25,18 @@ else
     
     Console.WriteLine($"Заданый массив:");
     
-    for (int i = 0; i < matrix.GetLength(0); i++)
+for (int i = 0; i < matrix.GetLength(0); i++)
+{
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        Console.Write($"{matrix[i,j]} ");
+        if (i+1 == positionRow && j+1 == positionCol)
         {
-            Console.Write($"{matrix[i,j]} ");
-            if (i+1 == positionRow && j+1 == positionCol)
-            {
-                searchNumber = matrix[i,j];
-            }
+            searchNumber = matrix[i,j];
         }
-        Console.WriteLine($"");
     }
-    Console.WriteLine($"Значение элемента: {searchNumber}");
+    Console.WriteLine($"");
+}
+Console.WriteLine($"Значение элемента: {searchNumber}");
     
 }
