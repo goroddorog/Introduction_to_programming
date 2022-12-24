@@ -4,11 +4,6 @@
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
-// int matrixSize = 4;
-// int[,] matrix = new int[matrixSize, matrixSize];
-// FillArraySpiral(matrix, matrixSize);
-// PrintArray(matrix);
-
 
 int matrixSize = 4;
 matrixSize += 2;
